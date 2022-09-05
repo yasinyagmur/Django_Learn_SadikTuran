@@ -3,13 +3,16 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("homepage")
+    return render(request,"blog/index.html")
 
 
 def blogs(request):
-    return HttpResponse("blogs")
+    return render(request,"blog/blogs.html")
+
 
 
 def blog_details(request,id):
-    return HttpResponse("blog details"+ str(id))
+    return render(request,"blog/blog-details.html",{
+        "id":id
+    })
     
