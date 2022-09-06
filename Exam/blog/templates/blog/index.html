@@ -1,3 +1,8 @@
-{% extends 'base.html' %}{% block content %} {%block title%}HomePage{%endblock%}
+{% extends 'base.html' %} {% load static %} {% block css_files %} <link
+rel="stylesheet" href="{%static "blog/css/style.css"%}"> {% endblock %}
+<br />
+{% block content %} <br />
+{%block title%}HomePage{%endblock%}
 <h1>home page index html</h1>
+<img src=" {% static 'blog/img/indir.png' %} " />
 {% endblock content %}
