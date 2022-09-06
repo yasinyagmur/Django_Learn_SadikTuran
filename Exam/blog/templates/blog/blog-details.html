@@ -1,7 +1,5 @@
-{% extends 'base.html' %}{% block content %}
-<ul>
-  <li><a href="">Home</a></li>
-  <li><a href="">Blogs</a></li>
-</ul>
+{% extends 'base.html' %}{% block content %} {%block title%}Blog
+detail{%endblock%}
+
 <h1>Blog Details: {{ id }}</h1>
 {% endblock content %}
