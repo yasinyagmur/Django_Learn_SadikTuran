@@ -1,0 +1,47 @@
+    1  pwd
+    2  dır
+    3  ls
+    4  cd ..
+    5  cd ..
+    6  cd ..
+    7  cd ..
+    8  cd ..
+    9  pwd
+   10  clear
+   11  history
+   12  echo "# Django_Learn_SadikTuran" >> README.md
+   13  git init
+   14  git add README.md
+   15  git commit -m "first commit"
+   16  git branch -M master
+   17  git remote add origin https://github.com/yasinyagmur/Django_Learn_SadikTuran.git
+   18  git push -u origin master
+   19  git add .
+   20  git commit -m"django learn from sadık turan"
+   21  git push
+   22  cd lesson_001/
+   23  djago-admin startproject blogapp
+   24  django-admin startproject blogapp
+   25  python -m venv env
+   26  django-admin startproject blogapp
+   27  django-admin startproject blog app
+   28  source env/Scripts/activate
+   29  django-admin startproject blog app
+   30  django-admin startproject blogapp
+   31  pip install django
+   32  django-admin startproject blogapp
+   33  django-admin startproject blogapp .
+   34  django-admin
+   35  python manage.py runserver
+   36  clear
+   37  deactivate 
+   38  source env/Scripts/activate
+   39  clear
+   40  python manage.py runserver
+   41  python manage.py runserver
+   42  python manage.py makemigrations
+   43  python manage.py migrate
+   44  python manage.py runserver
+   45  python manage.py runserver
+   46  deactivate 
+   47  history > history.txt
