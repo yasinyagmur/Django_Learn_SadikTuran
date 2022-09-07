@@ -5,7 +5,20 @@ rel="stylesheet" href="{%static "blog/css/style.css"%}"> {% endblock %}
 
 {%block title%}HomePage{%endblock%}
 
-<h1>home page index html</h1>
+<div class="container mt-3">
+    <div class="row">
+      <div class="col-3">{% include "partials/_categories.html" %}</div>
+      <div class="col-9">
+        <h1>HomePage</h1>
+        <hr>
+        {% include "blog/partials/_blog.html" %}
+        {% include "blog/partials/_blog.html" %}
+        {% include "blog/partials/_blog.html" %}
+        {% include "blog/partials/_blog.html" %}
+        </div>
+      </div>
+    </div>
+</div>
 
 {% endblock content %} {% block js_files %}
 <script src="{% static 'blog/js/script.js' %}"></script>
