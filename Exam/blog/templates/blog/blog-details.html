@@ -10,23 +10,23 @@ Blog detail{%endblock%}
 
                 <div class="card mb-3">
                     <div class="row">
-                      <div class="col-md-3">
+                        <div class="col-md-3">
                         <img
-                          src="{% static 'blog/img/'|add:blog.image %}"
-                          alt=""
-                          srcset=""
-                          class="img-fluid"
+                        src="{% static 'blog/img/'|add:blog.image %}"
+                        alt=""
+                        srcset=""
+                        class="img-fluid"
                         />
-                      </div>
-                      <div class="col-md-9">
-                        <div class="card-body">
-                          <h5 class="card-title">{{blog.title}}
-                          </h5>
-                          <div class="card-text">{{blog.description}}</div>
-                        </div>
-                      </div>
                     </div>
-                  </div>                  
+                    <div class="col-md-9">
+                        <div class="card-body">
+                        <h5 class="card-title">{{blog.title}}
+                        </h5>
+                        <div class="card-text">{{blog.description}}</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>                  
 
             </div>
         </div>
