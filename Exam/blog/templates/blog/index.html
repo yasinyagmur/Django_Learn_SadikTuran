@@ -11,10 +11,12 @@ rel="stylesheet" href="{%static "blog/css/style.css"%}"> {% endblock %}
       <div class="col-9">
         <h1>HomePage</h1>
         <hr>
+        {% for blog in blogs %}
+        {% if blog.is_home and blog.is_activate %}
         {% include "blog/partials/_blog.html" %}
-        {% include "blog/partials/_blog.html" %}
-        {% include "blog/partials/_blog.html" %}
-        {% include "blog/partials/_blog.html" %}
+        {% endif %}
+        {% endfor %}
+        
         </div>
       </div>
     </div>

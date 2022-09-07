@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-md-3">
       <img
-        src="{% static 'blog/img/1.jpg' %}"
+        src="{% static 'blog/img/'|add:blog.image %}"
         alt=""
         srcset=""
         class="img-fluid"
@@ -12,12 +12,9 @@
     <div class="col-md-9">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="{% url 'blog_details' 1%}"> Komple Web Geliştirme Kursu</a>
+          <a href="{% url 'blog_details' blog.id %}"> {{blog.title}}</a>
         </h5>
-        <div class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-          adipisci.
-        </div>
+        <div class="card-text">{{blog.description}}</div>
       </div>
     </div>
   </div>
