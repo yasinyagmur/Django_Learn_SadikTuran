@@ -1,11 +1,33 @@
-{% extends 'base.html' %}{% block content %} {%block title%}Blog
-detail{%endblock%}
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} {%block title%}
+Blog detail{%endblock%}
 
 <div class="container mt-3">
     <div class="row">
         <div class="col-3">{% include "partials/_categories.html" %}</div>
             <div class="col-9">
-                <h1>Blog Details: {{ id }}</h1>
+
+                <div class="card mb-3">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img
+                          src="{% static 'blog/img/'|add:blog.image %}"
+                          alt=""
+                          srcset=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body">
+                          <h5 class="card-title">{{blog.title}}
+                          </h5>
+                          <div class="card-text">{{blog.description}}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+
             </div>
         </div>
     </div>
