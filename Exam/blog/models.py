@@ -11,3 +11,4 @@ class Blog(models.Model):
 
 class Category(models.Model):
     name=models.CharField(max_length=150)
+    lastName = models.CharField(max_length=50)
