@@ -7,7 +7,16 @@ rel="stylesheet" href="{%static "blog/css/style.css"%}"> {% endblock %}
 
 <div class="container mt-3">
     <div class="row">
-      <div class="col-3">{% include "partials/_categories.html" %}</div>
+      <div class="col-3"><div class="list-group">
+        {% for category in category %}
+      
+        <a class="list-group-item list-group-item-action" href=""
+          >{{category.name|title}}</a
+        >
+      
+        {% endfor %}
+      </div>
+      </div>
       <div class="col-9">
         <h1>HomePage</h1>
         <hr>
