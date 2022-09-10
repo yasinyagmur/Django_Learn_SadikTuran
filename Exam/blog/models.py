@@ -1,10 +1,15 @@
+from distutils.command.upload import upload
 from pyexpat import model
 from django.db import models
 from django.utils.text import slugify
 # Create your models here.
+
+#blogs/1.jppeg 
+#movies/5.jppeg Image upload adresleme 
 class Blog(models.Model):
     title=models.CharField(max_length=200)
-    image=models.CharField(max_length=50)
+    # image=models.CharField(max_length=50)
+    image=models.ImageField(upload_to="blogsImages")
     description=models.TextField()
     is_activate=models.BooleanField(default=False)
     is_home=models.BooleanField(default=False)
