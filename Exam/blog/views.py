@@ -52,14 +52,14 @@ def blogs(request):
 
 
 
-def blog_details(request,id):
+def blog_details(request,slug):
     # blogs=data["blogs"]
     # selectedblog=None
     
     # for blog in blogs:
     #     if blog["id"]==id:
     #         selectedblog=blog
-    blog=Blog.objects.get(id=id)
+    blog=Blog.objects.get(slug=slug)
     # selectedblog =[ blog for blog in blogs if blog["id"]==id][0]
 
     return render(request,"blog/blog-details.html",{
