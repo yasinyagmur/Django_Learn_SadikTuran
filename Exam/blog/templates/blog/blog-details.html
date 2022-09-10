@@ -5,8 +5,7 @@ Blog detail{%endblock%}
 
 <div class="container mt-3">
     <div class="row">
-        <div class="col-3">{% include "partials/_categories.html" %}</div>
-            <div class="col-9">
+            <div class="col-12">
 
                 <div class="card mb-3">
                     <div class="row">
@@ -22,7 +21,7 @@ Blog detail{%endblock%}
                         <div class="card-body">
                         <h5 class="card-title">{{blog.title}}
                         </h5>
-                        <div class="card-text">{{blog.description}}</div>
+                        <div class="card-text">{{blog.description|safe}}</div>
                         </div>
                     </div>
                     </div>

@@ -2,6 +2,9 @@ from distutils.command.upload import upload
 from pyexpat import model
 from django.db import models
 from django.utils.text import slugify
+from ckeditor.fields import RichTextField
+
+
 # Create your models here.
 
 #blogs/1.jppeg 
@@ -10,7 +13,7 @@ class Blog(models.Model):
     title=models.CharField(max_length=200)
     # image=models.CharField(max_length=50)
     image=models.ImageField(upload_to="blogsImages")
-    description=models.TextField()
+    description=RichTextField()
     is_activate=models.BooleanField(default=False)
     is_home=models.BooleanField(default=False)
     # slugField modele daha sonradan eklendiği için ilk önce null kısmı True yapılır
